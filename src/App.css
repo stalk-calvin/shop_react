@@ -12,3 +12,7 @@ a:hover {
     color: grey;
     text-decoration: underline;
 }
+
+* {
+    box-sizing: border-box;
+}

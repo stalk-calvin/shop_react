@@ -1,12 +1,15 @@
 import React from 'react';
 
 import SignIn from '../../components/signin/signin.component';
+import HomePage from '../homepage/homepage.component';
 
 import './sign-in-up.styles.scss'
 
-const SignInUp = () => (
+const SignInUp = ({ currentUser }) => (
     <div className='sign-in-up'>
-        <SignIn />
+    {
+        currentUser ? <HomePage /> : <SignIn />
+    }
     </div>
 );
 

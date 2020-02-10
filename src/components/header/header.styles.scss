@@ -22,6 +22,15 @@
       .option {
         padding: 10px 15px;
       }
+
+      .pointer {
+        cursor: pointer;
+      }
+
+      .pointer:hover {
+        color: grey;
+        text-decoration: underline;
+      }
     }
   }
   
