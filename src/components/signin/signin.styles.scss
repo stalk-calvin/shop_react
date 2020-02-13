@@ -1,13 +1,15 @@
 .sign-in {
-    width: 26vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
+    padding: 0 2vw 0 0;
+
     .group {
         margin: 10px 0px;
     }
 
     .buttons {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 }
