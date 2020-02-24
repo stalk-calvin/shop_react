@@ -17,7 +17,7 @@ const Header = ({ currentUser, hidden }) => (
     
     <div className='header'>
         <Link to="/" className='logo-container'>
-            <Logo className='logo' />
+            <Logo width={"100px"} height={"100px"} className='logo' />
         </Link>
         <div className='options'>
             <Link to='/shop' className='option'>

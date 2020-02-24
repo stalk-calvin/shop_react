@@ -1,9 +1,9 @@
 .cart-icon {
-  width: 120px;
+  width: 110px;
   position: relative;
   display: flex;
-  align-items: center;
-  padding-left: 20px;
+  padding-left: 1vw;
+  margin: auto;
   cursor: pointer;
 
   .shopping-icon {
@@ -15,7 +15,7 @@
     position: absolute;
     font-size: 12px;
     font-weight: bold;
-    top: 31px;
+    top: 10px;
     padding-left: 8px;
   }
 }
