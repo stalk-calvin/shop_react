@@ -10,11 +10,10 @@ import { selectCartHidden } from '../../redux/cart/cart.selector';
 import { selectCurrentUser } from '../../redux/user/user.selector';
 
 import { ReactComponent as Logo } from '../../assets/logo.svg';
-
-import './header.styles.scss';
+import { HeaderContainer, LogoContainer, OptionsContainer, OptionLink } from './header.styles';
 
 const Header = ({ currentUser, hidden }) => (
-    
+
     <div className='header'>
         <Link to="/" className='logo-container'>
             <Logo width={"100px"} height={"100px"} className='logo' />
@@ -28,7 +27,7 @@ const Header = ({ currentUser, hidden }) => (
             </Link>
             {
                 currentUser ? (
-                    <div className='pointer option' onClick={() => {auth.signOut()}} title={"Welcome " + currentUser.displayName}>SIGN OUT</div>
+                    <OptionLink as='div' onClick={() => {auth.signOut()}} title={"Welcome " + currentUser.displayName}>SIGN OUT</OptionLink>
                 ) : (
                     <Link className='option' to='/signin'>SIGN IN</Link>
                 )
