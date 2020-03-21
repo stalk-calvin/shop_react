@@ -4,9 +4,10 @@ import Item from '../item/item.component';
 
 import './preview-collection.styles.scss';
 
-const PreviewCollection = ({ title, items}) => (
+const PreviewCollection = ({ title, items, path}) => (
+
     <div className='collection-preview'>
-        <h1 className='title'>{ title.toUpperCase() }</h1>
+        <a href={ path }><h1 className='title'>{ title.toUpperCase() }</h1></a>
         <div className='preview'>
         {
             items
