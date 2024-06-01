@@ -4,7 +4,7 @@ e-commerce platform
 
 ## Demo
 
-https://shop-now-react.herokuapp.com/
+https://master--helpful-baklava-e4a111.netlify.app/
 
 ### Features
 
